@@ -56,4 +56,9 @@ public class calculadora {
         double division=numero1/numero2;
         return division;
     }
+     
+    public int modulo(){
+        int modulo = (int)(numero1%numero2);
+        return modulo;
+    }
 }
