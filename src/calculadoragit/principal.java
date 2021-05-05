@@ -34,17 +34,18 @@ public class principal {
         int operacion =0;
         do {
             System.out.println(" Introduce Operacion a realizar");
-            System.out.println(" 1. suma \n 2. resta \n 3. salir");
+            System.out.println(" 1. suma \n 2. resta \n 3. multiplicacion \n 4. salir");
             // leo por teclado un entero como opción del menú
             operacion =sc.nextInt();
             // segun valor elegido ejecuto método del objeto claculadora
             switch ( operacion ){
             case 1: System.out.println( " la suma es "+ casio.suma() ); break;
             case 2: System.out.println( " la resta es "+ casio.resta() ); break;
-            default: System.out.println(" Debes elegir una opción de 1 a 3");
+            case 3: System.out.println(" la multipilcacion es "+ casio.multiplicacion()); break;
+            default: System.out.println(" Debes elegir una opción de 1 a 4");
             }
     
-        } while ( operacion != 3 );
+        } while ( operacion != 4 );
         
         System.out.println(" Gracias por usar la calculadora...hasta luegooooorrr");
         
